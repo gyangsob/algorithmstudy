@@ -84,7 +84,7 @@ int main(void)
 
 	for(i=0; i<tc_num; i++){
 		// 채점 조건에 따라 10보다 크거나 0보다 작은 수는 오답처리
-		if(score_data[i]->result >= 10 || score_data[i]->result <= 0){
+		if(score_data[i]->result > 10 || score_data[i]->result < 0){
 			printf("No\n");
 		}
 		// 그 외 숫자에 대해서
